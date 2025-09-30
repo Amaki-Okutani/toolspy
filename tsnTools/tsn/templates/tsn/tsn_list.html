@@ -76,6 +76,7 @@
         <thead>
         <tr class="header-row">
             <th></th>
+            <th>商品コード</th>
             <th>名称</th>
             <th>略称</th>
             <th>区分</th>
@@ -87,6 +88,7 @@
         <tr>
             <td>
             <input type="radio"name="deleteTarget" value="{{ row.product_group_code }}"></td>
+            <td>{{ row.product_group_code }}</td>
             <td>{{ row.product_group_name }}</td>
             <td>{{ row.product_group_abbreviation }}</td>
             <td>
