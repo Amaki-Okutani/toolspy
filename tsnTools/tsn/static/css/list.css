@@ -1,0 +1,691 @@
+/* 共通基本設定 */
+body {
+	font-family: "Segoe UI", sans-serif;
+	margin: 20px;
+	background-color: #f8f9fa;
+	margin-top: 0px;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 40px;
+	background-color: rgb(0, 0, 0);
+	color: white;
+	padding: 10px 10px;
+	font-size: 12px;
+}
+
+.header-row th {
+	max-height: 150px;
+}
+
+.header-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.left-group {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+
+
+.search-form-2col {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 50px;
+
+	flex-wrap: wrap;
+}
+
+.form-left {
+	flex: 1;
+}
+
+.form-right {
+	flex: 1;
+
+}
+
+.form-actions {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 50px;
+
+}
+
+.form-actions input[type="submit"] {
+	min-width: 100px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 8px 8px;
+	cursor: pointer;
+
+}
+
+.form-actions input[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+.menu-icon {
+	background-color: #555;
+	color: #fff;
+	height: 100%;
+	width: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+}
+
+.menu-label {
+	flex: 1;
+	padding: 0 10px;
+	text-align: left;
+	justify-content: left;
+}
+
+.left-group {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.title {
+	font-weight: 100;
+	font-size: 25pt;
+}
+
+.signout a,
+.user_info a {
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+	border: none;
+}
+
+/* ハンバーガーメニュー */
+.menu-toggle {
+	font-size: 24px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: white;
+}
+
+/* サイドメニュー */
+.side-menu {
+	position: absolute;
+	top: 60px;
+	left: 1px;
+	width: 300px;
+	height: auto;
+	background-color: #E9ECEF;
+	padding: 10px;
+	display: none;
+	font-size: 20px;
+}
+
+.side-menu.visible {
+	display: block;
+}
+
+.side-menu ul {
+	list-style: none;
+	padding: 0;
+}
+
+.side-menu ul li {
+	margin-bottom: 10px;
+}
+
+.side-menu ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+/* ボタン共通 */
+button,
+input[type="submit"] {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+	opacity: 0.7;
+}
+
+.btn-back {
+	background-color: gray;
+	color: white;
+	/* 見やすくするため */
+}
+
+.btn-grayleft,
+.btn-grayright {
+	height: 32px;
+	padding: 0 16px;
+	line-height: 32px;
+	font-size: 14px;
+	box-sizing: border-box;
+	background-color: dimgrey;
+}
+
+.btn-graycenter {
+	height: 32px;
+	padding: 0 16px;
+	line-height: 32px;
+	font-size: 14px;
+	box-sizing: border-box;
+	background-color: dimgrey;
+}
+
+.button-container form {
+	margin: 0;
+}
+
+
+
+/* グレーボタン */
+.btn-grayleft {
+	background-color: dimgrey;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.btn-graycenter {
+	background-color: dimgrey;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.btn-grayright {
+	background-color: dimgrey;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+button,
+input[type="submit"] {
+	padding: 8px 16px;
+	font-size: 14px;
+	border-radius: 4px;
+	/* 他 */
+}
+
+
+.result-container>div:last-child {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.btn-gray:hover {
+	background-color: #666;
+}
+
+/* 入力欄 */
+input[type="text"] {
+	width: 50%;
+	height: 30px;
+	font-size: 15px;
+}
+
+.form-left input[type="text"],
+.small-input {
+	width: 100%;
+	height: 30px;
+}
+
+.form-left select,
+.small-select {
+	width: 200px;
+	height: 25px;
+}
+
+.clean-table td.radio-column {
+	width: 40px;
+	/* 横幅を小さくする */
+	padding: 0;
+}
+
+table th {
+	padding-right: 30px;
+	/* ラベルとテキストの間を広げる */
+	text-align: left;
+	/* 任意：右寄せしたくない場合 */
+}
+
+table td {
+	padding: 5px 10px;
+	/* 任意：上下左右余白 */
+}
+
+
+/* レイアウト共通 */
+
+
+.search-container,
+.result-container {
+	width: 85%;
+	margin: 20px auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-wrapper,
+.table-wrapper {
+	width: 65%;
+	margin: 20px auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-wrapper input [type="text"] {
+	width: 100%;
+
+}
+
+/* テーブル共通 */
+
+
+.clean-table {
+	width: 100%;
+	table-layout: auto;
+	border-collapse: collapse;
+
+}
+
+.clean-table th,
+.clean-table td {
+	padding: 5px;
+	border-bottom: 1px solid #ccc;
+	word-wrap: break-word;
+}
+
+.clean-table th {
+	background-color: #e9ecef;
+
+	top: 0;
+	z-index: 2;
+}
+
+
+.clean-table input[type="radio"] {
+	width: 14px;
+	height: 14px;
+}
+
+/* スクロールコンテナ */
+.scroll-container {
+
+	margin-top: 0%;
+	max-height: 300px;
+	/* 必要に応じて調整 */
+	overflow-y: auto;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+
+
+}
+
+/* テーブル基本スタイル */
+.clean-tableScroll {
+
+	width: 100%;
+	border-collapse: collapse;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 14px;
+
+
+}
+
+/* テーブルヘッダー */
+.clean-tableScroll thead th {
+	position: sticky;
+	top: 0;
+	
+	z-index: 2;
+	text-align: left;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	width: 150px;
+}
+
+.categoryCheckbox {
+	text-align: left;
+	width: 60px;
+}
+
+/* テーブルセル */
+.clean-tableScroll td,
+.clean-table th {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+
+}
+
+/* ストライプ行 */
+.clean-tableScroll tbody th:nth-child(odd) {
+	background-color: #fafafa;
+}
+
+
+/* チェックボックスの中央寄せ */
+.clean-tableScroll td:first-child {
+	text-align: center;
+}
+
+/* チェックボックスのサイズ調整 */
+.categoryCheckbox {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+
+
+
+
+/* ページネーション */
+ul.pagination {
+	display: flex;
+	justify-content: flex-start;
+	width: 85%;
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0px;
+
+}
+
+ul.pagination li {
+	margin: 0;
+	padding: 0;
+}
+
+ul.pagination a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	color: #333;
+	text-decoration: none;
+	font-size: 14px;
+	height: 20px;
+	min-width: 30px;
+	transition: background-color 0.3s ease;
+}
+
+ul.pagination li.prev a {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+ul.pagination li.next a {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+ul.pagination a.current-page {
+	background-color: #007BFF;
+	color: white;
+	border-color: #007BFF;
+	pointer-events: none;
+}
+
+ul.pagination li.first-number a {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+ul.pagination li.last-number a {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+ul.pagination a:not(.current-page):hover {
+	background-color: #E9ECEF;
+	border-color: #ADB5BD;
+}
+
+/* フォームカラム */
+.search-form-2col {
+	display: flex;
+	gap: 10px;
+}
+
+.form-left {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: auto;
+	padding: 10px;
+}
+
+.form-right {
+	position: relative;
+	width: 300px;
+	height: 200px;
+}
+
+.form-right .domestic-section {
+	overflow: hidden;
+	position: absolute;
+	width: 600px;
+	top: 0;
+	padding-top: 10px;
+}
+
+.form-right .domestic-section1 {
+	position: absolute;
+	top: 80px;
+}
+
+.form-right .domestic-section2 {
+	position: absolute;
+	top: 160px;
+}
+
+
+.form-right .sort-section {
+	position: relative;
+	top: 240px;
+	/* 必要に応じて調整（元は120px） */
+
+}
+
+.form-right .sort-section select {
+	width: 80%;
+	/* 任意の幅 */
+	height: 30px;
+	/* 必要なら高さも指定 */
+}
+
+.sameline {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0px;
+	width: 100%;
+}
+
+.button-container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.button-topcontainer {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	padding-bottom: 15px;
+}
+
+/* ボタン配置 */
+/*.button-container {*/
+
+/*	display: flex;*/
+/*	justify-content: flex-end;*/
+/*	gap: 10px;*/
+/*	margin-top: 0px;*/
+/*	margin-bottom: 0px;*/
+/*	margin-left: 60px;*/
+/*}*/
+
+/* ログインフォーム用 */
+.login_form {
+	display: flex;
+	height: 20px;
+	margin: 10px;
+	padding: 5px;
+}
+
+.login_form input[type="text"],
+input[type="password"] {
+	margin: 5px;
+	width: 100px;
+	height: 20px;
+}
+
+.commentsize {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 200px;
+	/* 必要に応じて調整 */
+}
+
+/* スクロール付きのエリア */
+
+
+/* テーブル幅調整（必要に応じて） */
+.clean-table {
+	width: 100%;
+	border-collapse: collapse;
+
+}
+
+.clean-table th,
+.clean-table td {
+	padding: 8px;
+	/*  border: 0px solid #ddd;*/
+}
+
+thead th {
+	background-color: #f8f8f8;
+	/* 必ず背景色を明示 */
+}
+
+tbody td {
+	background-color: #fff;
+	/* 表本体も同様に */
+}
+
+/* フィルター全体の横並び */
+.filter-container {
+	display: flex;
+	align-items: center;
+	/*	gap: 10px;*/
+	/* 各要素の間隔 */
+	margin-bottom: 0px;
+	height: 35px;
+	overflow: hidden;
+	/* ← .clean-tableScroll と揃える */
+}
+
+
+
+/* テキスト入力 */
+.filter-input {
+	
+
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: px;
+	height: 17px;
+	width: 450px;
+	overflow: hidden;
+}
+
+/* ボタン */
+.filter-button {
+	margin-bottom: 0;
+	
+	/* 十分な内側余白 */
+	background-color: rgb(213, 213, 213);
+	color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	/* テキストが読めるサイズに */
+	cursor: pointer;
+	transition: background-color 0.3s;
+	white-space: nowrap;
+	overflow: hidden;
+	/* ← これが改行防止のカギ！ */
+}
+
+.filter-button:hover {
+	background-color: #0056b3;
+}
+
+/* テーブルの間の余白をなくす */
+
+.nogap {
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	margin-top: 0;
+	padding-top: 0
+}
+
+/* scroll-containerの上の余白を消す */
+
+
+/* テーブル周りの余白をなくす */
+.clean-tableScroll {
+	border-collapse: collapse;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+label[for="lcode"] {
+	display: inline-block;
+	height: 2.5em;
+	line-height: 2.5em;
+
+}
