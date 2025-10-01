@@ -64,4 +64,7 @@ def product_group_list(request):
         'rows': qs,
     }
 
-    return render(request, 'tsn/tsn_list.html', context)
+    return render(request, 'tsn/ProductGroup/group_list.html', context)
+
+def regist_page(request):
+    return render(request,'tsn/ProductGroup/group_regist.html')

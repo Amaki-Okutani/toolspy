@@ -2,5 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('tsn/', views.product_group_list, name='tsn_list'),
+    path('tsn/productGroup/list/', views.product_group_list, name='group_list'),
+    path('tsn/productGroup/regist/',views.regist_page,name='group_regist'),
+
 ]
