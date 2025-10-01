@@ -23,8 +23,8 @@ class ProductregistForm(forms.Form):
     productGroupCode = forms.CharField( required=False)
     productGroupName = forms.CharField(max_length=128, required=False)
     productGroupAbbreviation = forms.CharField(max_length=15, required=False)
-    domesticAbroadClass = forms.MultipleChoiceField(
+    domesticAbroadClass = forms.ChoiceField(
         choices=[('0', '海外'), ('1', '国内')],
-        widget=forms.CheckboxSelectMultiple,
+        widget=forms.Select,
         required=False
     )

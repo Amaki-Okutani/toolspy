@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import TsnTools
 from .forms import ProductGroupSearchForm
+from .forms import ProductregistForm
+
 from django.db.models import Q
 
 def product_group_list(request):
@@ -67,4 +69,15 @@ def product_group_list(request):
     return render(request, 'tsn/ProductGroup/group_list.html', context)
 
 def regist_page(request):
-    return render(request,'tsn/ProductGroup/group_regist.html')
+    form = ProductregistForm(request.POST or None)
+    context = {
+        'form': form,
+    }
+    return render(request,'tsn/ProductGroup/group_regist.html',context)
+
+def check_page(request):
+    form = ProductregistForm(request.POST or None)
+    context = {
+        'form': form,
+    }
+    return render(request,'tsn/ProductGroup/group_confirm.html',context)
